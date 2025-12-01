@@ -14,8 +14,8 @@ something that shiftedstorage will do for you when starting up services.
 To publish the Docker image you will need to:
 
 ```bash
-docker build -t edsu/shiftedstorage-ui .
-docker push edsu/shifted-storage-ui
+docker build --platform linux/amd64 --tag edsu/shiftedstorage-ui .
+docker push edsu/shiftedstorage-ui
 ```
 
 [shiftedstorage]: https://github.com/historypin/shiftedstorage
