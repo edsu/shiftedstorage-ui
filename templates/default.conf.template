@@ -1,0 +1,15 @@
+server {
+  listen 3000;
+  server_name _;
+  root /usr/share/nginx/html;
+  index index.html;
+
+  location /api/cluster/ {
+    proxy_pass http://$CLUSTER_REST_URL/;
+    proxy_http_version 1.1;
+    proxy_set_header Connection "";
+    client_max_body_size 2g;
+  }
+
+  location /healthz { return 200 "ok\n"; }
+}

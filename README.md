@@ -1,0 +1,21 @@
+# shiftedstorage-ui
+
+This is a user interface for [shiftedstorage]. It is a static web page that is
+served up by nginx and, which talks to a running IPFS Cluster API. Instead of
+using this Docker image directly you will likely want to be using the docker
+compose configuration that shiftedstorage creates for you. 
+
+Typically you will need to ensure that the `CLUSTER_REST_URL` environment is
+set to the IP address and port where the IPFS Cluster API is running. This is
+something that shiftedstorage will do for you when starting up services.
+
+## Publish
+
+To publish the Docker image you will need to:
+
+```bash
+docker build -t edsu/shiftedstorage-ui .
+docker push edsu/shifted-storage-ui
+```
+
+[shiftedstorage]: https://github.com/historypin/shiftedstorage
