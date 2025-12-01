@@ -535,8 +535,7 @@ refreshBtn.onclick = () => {
 };
 
 window.view = (cid) => {
-  const gatewayUrl = `http://${window.location.host}:8080`;
-  window.open(`${gatewayUrl}/ipfs/${cid}`);
+  window.open(`/ipfs/${cid}`);
 };
 
 function init() {

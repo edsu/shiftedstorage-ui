@@ -5,9 +5,9 @@ served up by nginx and, which talks to a running IPFS Cluster API. Instead of
 using this Docker image directly you will likely want to be using the docker
 compose configuration that shiftedstorage creates for you. 
 
-Typically you will need to ensure that the `CLUSTER_REST_URL` environment is
-set to the IP address and port where the IPFS Cluster API is running. This is
-something that shiftedstorage will do for you when starting up services.
+Typically you would need to ensure that the `CLUSTER_REST_URL` and
+`IPFS_REST_URL` environment variables are set. However this is something that
+shiftedstorage will do for you when starting up services.
 
 ## Publish
 
