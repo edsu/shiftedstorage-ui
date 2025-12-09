@@ -19,7 +19,7 @@ shiftedstorage will do for you when starting up services.
 To publish the Docker image you will need to:
 
 ```bash
-docker build --platform linux/amd64 --tag edsu/community-cloud-ui .
+docker build --platform linux/amd64 --tag edsu/community-cloud-storage-ui .
 docker push edsu/community-cloud-storage-ui
 ```
 
